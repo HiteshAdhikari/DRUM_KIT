@@ -1,0 +1,49 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+
+body{
+    background:url(new.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.keys{
+    display: flex;
+    align-items: center;
+    max-width: 2000px;
+    justify-content: space-between;
+    padding: 2em 3em;
+    height: 100vh;
+}
+.key{
+    border: 3px solid rgb(255, 35, 187);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    width: 8%;
+    font-size:1.2rem;
+    padding: 1em 2em;
+    margin: 0 .1em; 
+    transition: all .2s ease;
+}
+
+kbd{
+    color: rgb(255, 35, 187);
+    font-family:system-ui,  sans-serif;
+    font-weight: bolder;
+}
+.sound{
+    color: rgb(255, 221, 52);
+    text-transform: uppercase;
+    font-weight: 900px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+
+.playing{
+    transform: scale(1.1);
+    border-color: yellow;
+    background-color: black;
+}
